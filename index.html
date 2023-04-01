@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- This container stores the labels and the text input for the form validator
+      A few pointers after mistakes being made: 1.Use <form> to start a form not div 
+      2. use <small> to show error messages if any -->
+      
+      <form id="form" class="form">
+          <h2><strong>Register With Us</strong></h2>
+        <div class="form-control">
+        <label for="username" >Username</label>
+        <input type="text" id="username" placeholder="Enter Username"/>
+        <!-- Error message -->
+        <small>Error Message</small>
+      </div>
+      
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter email"/>
+       <small>Error Message</small>
+      </div>
+      
+      <div class="form-control" >
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password"/>
+        <small>Error Message</small>
+      </div>
+      
+      <div class="form-control" >
+        <label for="Cpassword">Confirm Password</label>
+        <input type="password" id="Cpassword" placeholder="Confirm Password"/>
+        <small>Error Message</small>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+    <script src="script.js"></script>
+</html>
